@@ -1,5 +1,5 @@
 export const validateString = (value: unknown) =>
-  !value || typeof value !== "string";
+  !(!value || typeof value !== "string");
 
 export const getErrorMessage = (error: unknown): string => {
   let message: string;

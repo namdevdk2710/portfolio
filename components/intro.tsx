@@ -6,8 +6,8 @@ import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
-import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-sectionn-context";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -83,21 +83,21 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/cv.pdf"
           download
         >
           Download CV <HiDownload className="opacity-70" />
         </a>
         <a
-          className="bg-white p-4 flex items-center gap-2 text-gray-700 hover:text-gray-950 rounded-full hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 flex items-center gap-2 text-gray-700 hover:text-gray-950 rounded-full hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/nam-nguyen-2a74b2180"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white p-4 flex items-center gap-2 text-gray-700 hover:text-gray-950 rounded-full text-[1.35rem] hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="bg-white p-4 flex items-center gap-2 text-gray-700 hover:text-gray-950 rounded-full text-[1.35rem] hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/namdevdk2710"
           target="_blank"
         >
